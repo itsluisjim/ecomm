@@ -1,13 +1,20 @@
 # 🐆 JagTech E-Commerce Website 
 
 #### Team Members 👨🏻‍💻
-<a href="https://github.com/itsluisjim/ecomm/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=itsluisjim/ecomm" />
+<a href="https://github.com/itsluisjim">
+  @itsluisjim
 </a>
-
-Made with [contrib.rocks](https://contrib.rocks).
-
-
+<a href="https://github.com/AshCraine">
+  @AshCraine
+</a>
+<a href="https://github.com/hstandifer">
+  @hstandifer
+</a>
+<a href="https://github.com/EduaHdz">
+  @EduaHdz
+</a>
+<br/>
+<br/>
 Our motivation for developing this system is to be able to provide affordable computers for students. Another reason behind developing this system is put good use of hardware that is not being used by the Information Technology Department. The proposed system will allow students to purchase surplused inventory from the IT department at an affordable price. This system is intended for students and faculty who are associated with the University either through enrollment or employment.
 
 ## 💻 Tech Stack:
