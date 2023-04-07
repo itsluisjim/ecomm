@@ -22,7 +22,7 @@ Our motivation for developing this system is to be able to provide affordable co
 * ### System Requirements
     1. Most of pages the user is on, will contain a header at the top of each page the header will contain the home button, account button, the shopping cart, and a nav bar.
     
-    2. The home page will show a message from the university and a section for featured products. Should the user click on an item card, the user will be taken to a specific page with the item and more details.
+    2. The home page will show a message from the university and a section for randomized featured products. Should the user click on an item card, the user will be taken to a specific page with the item and more details.
     
     3. Should the user click on a category, all items meeting that criteria will be loaded on the page. Clicking on either the name or the picture of an item will bring up the specific item.
     
