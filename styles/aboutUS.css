@@ -1,0 +1,33 @@
+/*styles for About us*/
+
+* {
+    box-sizing: border-box;
+}
+.root-container-aboutus {
+    font-family: 'Roboto', 'Times New Roman', Times, serif;
+}
+.section-titles {
+  text-align: center;
+  font-size: 25px;
+  color: #003882;
+}
+p {
+  text-align: center;
+}
+
+/*about us border box info*/
+.about-banner {
+  font-size: 25px;
+  padding: 30px;
+  text-align: center;
+  background-color: #003882;
+  color: white;
+}
+.bold {
+  font-weight: bold;
+}
+@media screen and (max-width: 580px) {
+  .policy-info {
+    margin: 30px;
+  }
+}

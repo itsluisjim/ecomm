@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', 'Times New Roman', Times, serif;
+}
+.banner--container {
+    background-color: rgb(236, 234, 234);
+    padding: 20px 100px;
+}
+.banner--title {
+    letter-spacing: 2px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #003882;
+    margin: 30px auto 40px;
+}
+.banner--description {
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+    font-size: 15px;
+    font-family: 'Roboto', Times, serif;
+}
+.ft-prod--section {
+    padding: 20px 100px;
+    margin-bottom: 50px;
+}
+.prod--container {
+    background-color:  rgb(236, 234, 234);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    height: 450px;
+    gap: 15px;
+    overflow-x: scroll;
+}
+.prod--card {
+    background-color: white;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    padding: 25px;
+    width: 400px;
+    height: 400px;
+}
+.card--img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+.card--description {
+    height: 200px;
+    width: 100%;
+    text-align: justify;
+    line-height: 1.5rem;
+    
+}
+.prod--container::-webkit-scrollbar:hover {
+    visibility: visible;
+}
+.prod--container::-webkit-scrollbar {
+    width: 10px;
+    visibility: hidden;
+}
+ 
+.prod--container::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+.prod--container::-webkit-scrollbar-thumb {
+  background-color: #003882;
+  border-radius: 10px;
+  outline: 1px solid #93a6bf;
+}
+footer {
+    background-color: #003882;
+    color: white;
+    padding: 20px 100px;
+}
+footer p {
+    text-align: justify;
+    line-height: 1.5rem;
+}
+ @media screen and (max-width: 700px){
+    .banner--container, footer {
+        padding: 20px 40px;
+    }
+    .ft-prod--section {
+        padding: 20px 70px;
+    }
+  }

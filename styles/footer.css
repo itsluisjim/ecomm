@@ -1,0 +1,12 @@
+
+footer {
+    box-sizing: border-box;
+    font-family: 'Roboto', 'Times New Roman', Times, serif;
+    background-color: #003882;
+    color: white;
+    padding: 20px 50px;
+}
+footer p {
+    text-align: justify;
+    line-height: 1.5rem;
+}

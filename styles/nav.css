@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+}
+.strong {
+  font-weight: bold;
+}
+body {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.header {
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid #003882;
+}
+.logo-and-brand {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.logo-link {
+  height: 75px;
+}
+.logo-and-brand p {
+  letter-spacing: 2px;
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+  color: #003882;
+}
+.logo {
+  width: 75px;
+}
+.navbar {
+  display: flex;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  padding: 0;
+}
+.navbar li a {
+  padding: 30px 40px;
+  white-space: nowrap;
+  color: #003882;
+}
+.navbar li a:hover {
+  background-color: #f2cd00;
+  color: #003882;
+}
+.navbar li a.active {
+  background-color: #003882;
+  color: white;
+}
+.icons-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100px;
+}
+.badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+  position: relative;
+
+  top: -15px;
+  left: 20px;
+}
+.disable {
+  cursor: not-allowed;
+}
+.adj-icons-container {
+  width: 150px;
+  height: 50px;
+}
+.account-name-link {
+  font-family: "Roboto", 'Times New Roman', Times, serif;
+  display: flex;
+  align-items: center;
+}
+form.search-form {
+  display: flex;
+  align-items: center;
+}
+.search-bar {
+  width: 175px;
+  height: 35px;
+  padding: 15px 10px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  margin-right: 10px;
+  font-size: 15px;
+}
+.search-icon-btn {
+  height: 35px;
+  width: 35px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  background-color: white;
+}
+.search-icon {
+  transform: scale(1.5);
+}
+button:hover {
+  cursor: pointer;
+  background-color: #f2cd00;
+}
+button:active {
+  background-color: #d6b702;
+}
+.icon {
+  padding: 10px 10px;
+  transform: scale(1.5);
+}
+
+/* --- Tooltip for profile icon--- */
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltipContent {
+    font-family: "Roboto", 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5px;
+    visibility: hidden;
+    font-size: 10px;
+    width: fit-content;
+    color: white;
+    background-color: #a2a2a2;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    
+    /* Position the tooltip */
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    margin-left: -60px;
+  }
+  .tooltip-btns {
+    background-color: white;
+    font-family: 'Roboto', 'Times New Roman', Times, serif;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #003882;
+  }
+  .tooltip-btns:hover {
+    background-color: #f2cd00;
+  }
+  .tooltip-bottom::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 86%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #a2a2a2 transparent;
+}
+  
+  .tooltip:hover .tooltipContent {
+    visibility: visible;
+  }
+
+/* ----- */
+
+@media screen and (max-width: 1030px) {
+  form.search-form {
+    display: none;
+  }
+  .brand {
+    display: none;
+  }
+  .navbar li a {
+    padding: 28px 20px;
+  }
+}

@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.cart-root-container {
+  height: 100vh;
+  font-family: "Roboto", "Times New Roman", Times, serif;
+}
+.shopping-cart-header {
+  background-color: #003882;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin: 0;
+  font-size: 60px;
+}
+.cart-left-col {
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-column-gap: 20px;
+}
+.cart {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.product-card {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 20px;
+  width: 100%;
+  height: fit-content;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  border: 1px solid lightgray;
+  border-radius: 15px;
+  padding: 20px;
+}
+.card-img {
+  width: 300px;
+  height: 200px;
+  object-fit: contain;
+}
+.product-info {
+  width: 100%;
+}
+.product-name {
+  margin-bottom: 20px;
+}
+.product-quantity {
+  white-space: nowrap;
+}
+.price-quantity-remove {
+  display: flex;
+  gap: 20px;
+}
+.delete-btn {
+  padding: 10px 15px;
+  background-color: #db1010;
+  font-size: 15px;
+  color: white;
+  border-radius: 10px;
+  border: 1px solid;
+  white-space: nowrap;
+
+}
+.return-shopping-button,
+.checkout-button {
+  padding: 10px 15px;
+  background-color: #003882;
+  font-size: 15px;
+  color: white;
+  border-radius: 10px;
+  border: 1px solid;
+}
+/* for anchor tag if used instead of btn */
+.return-shopping-button {
+    text-align: center;
+}
+.return-shopping-button:hover {
+    background-color: #f2cd00;
+  }
+  .return-shopping-button:active {
+    background-color: #c4a701;
+}
+/* ########### */
+
+
+.price-checkout {
+  padding: 20px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  border: 1px solid lightgray;
+  border-radius: 15px;
+}
+.total-price {
+  margin: 0 0 10px 0;
+}
+.checkout-button {
+    /* styles if we use an anchor tag instead of a btn */
+    display: block;
+    text-align: center;
+
+  width: 100%;
+  background-color: #f2cd00;
+}
+.checkout-button:hover {
+  background-color: #cbad02;
+}
+.checkout-button:active {
+  background-color: #E0BE01;
+}
+
+@media screen and (max-width: 1115px){
+  .cart-left-col {
+    grid-template-columns: 3fr 2fr;
+  }
+  .product-card {
+    height: 320px;
+  }
+  
+}
+@media screen and (max-width: 1000px){
+  .cart-left-col {
+    grid-template-columns: 3fr 2fr;
+  }
+  .product-card {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  
+}

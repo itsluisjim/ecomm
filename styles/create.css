@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+  }
+  .root-container-create {
+    height: 100vh;
+    font-family: "open-sans", sans-serif;
+  }
+  .card-container-create {
+    padding-top: 30px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.2);
+    max-width: 30em;
+    background-color: aliceblue;
+    padding: 40px;
+    border: 1px solid lightgray;
+  }
+  .card-title {
+    margin-top: 0;
+  }
+
+  .login-labels {
+    font-size: 20px;
+  }
+
+  input {
+    font-family: 'Open sans', 'Times New Roman', Times, serif;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  form {
+    width: 235px;
+  }
+  .loginButton {
+    background-color: #ccc;
+    font-size: 15px;
+    width: 100%;
+    border-style: none;
+    border-radius: 5px;
+    color: white;
+    padding: 8px 15px;
+    margin-top: 10px;
+    cursor: not-allowed;
+  } 
+  .link-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .link-container-create {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  .link-container a {
+    font-size: 15px;
+  }
+  .error {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    border: 2px solid rgb(255, 4, 4);
+    border-radius: 5px;
+    padding: 10px;
+  }
+  .no-error {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  .top-bar {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    background-color: #003882;
+    padding: 20px 20px;
+    margin: 0;
+    font-size: 60px;
+  }
+
+  .create-header {
+    font-size: 60px;
+    margin: 0px;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+  }
+
+  .return-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .return-button {
+    font-family: "Open sans", 'Times New Roman', Times, serif;
+    text-align: center;
+    white-space: nowrap;
+    padding: 15px 20px;
+    background-color: white;
+    font-size: 15px;
+    color: #003882;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+
+  @media screen and (max-width: 700px) {
+    .top-bar {
+      grid-template-columns: 3fr 1fr;
+    }
+    .empty-div {
+      display: none;
+    }
+    .create-header {
+      font-size: 40px;
+    }
+}
