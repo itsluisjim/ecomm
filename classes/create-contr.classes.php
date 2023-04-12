@@ -39,7 +39,7 @@ class CreateContr extends Create
         }
 
         // If info is provided correctly it will create a user by calling the function setUser
-        // and passing out data to be stored in the database.
+        // and passing our data to be stored in the database.
         $this->setUser($this->firstName, $this->lastName, $this->email, $this->systemID, $this->password);
     }
 
@@ -62,6 +62,7 @@ class CreateContr extends Create
     {
         $result = '';
 
+        // checkUser is a method in the Create class. The create controller extends the Create class.
         if (!$this->checkUser($this->systemID, $this->email)) {
             $result = false;
         } else {
