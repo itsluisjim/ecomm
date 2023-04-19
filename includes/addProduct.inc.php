@@ -26,7 +26,6 @@ if (isset($_POST["submit"])) {
     settype($price, 'double');
     settype($year, 'integer');
 
-    //Stunning 13.3-inch Retina display. Touch ID and the latest Apple-designed keyboard. Dual-core 8th-generation Intel Core i5 processor with Intel UHD Graphics 617. Fast SSD storage and 8GB memory. Stereo speakers with wider stereo sound
 
     include "../classes/dbh.classes.php";
     include "../classes/addProduct.classes.php";
